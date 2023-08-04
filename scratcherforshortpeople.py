@@ -13,7 +13,7 @@ star_table = soup.find_all('table', {"class":"wikitable sortable"})
 total_table = len(star_table)
 temp_list= []
 
-table_rows = star_table[1].find_all('tr')
+table_rows = star_table[2].find_all('tr')
 
 for tr in table_rows:
     td = tr.find_all('td')
